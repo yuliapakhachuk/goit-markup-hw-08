@@ -1,0 +1,21 @@
+.social__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -10px;
+}
+.social__item {
+  margin-right: 10px;
+}
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social__logo {
+  fill: currentColor;
+}
