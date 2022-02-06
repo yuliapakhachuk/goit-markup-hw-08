@@ -192,6 +192,7 @@ a {
   display: inline-block;
   padding: 10px 55px;
   width: 200px;
+  margin: 0 auto;
 }
 
 .filter__list {
@@ -281,9 +282,8 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 40px;
-  min-width: 528px;
-  min-height: 581px;
+  padding: 30px;
+  width: 95vw;
   background-color: var(--background-color1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -293,6 +293,19 @@ a {
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.2);
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    padding: 40px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .close-modal-btn {
@@ -436,6 +449,7 @@ a {
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 999;
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
@@ -449,6 +463,12 @@ a {
 
 .mob-menu.is-open {
   transform: translateX(0);
+}
+
+@media screen and (max-width: 479px) {
+  .mob-menu {
+    padding: 38px 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1274,17 +1294,22 @@ a {
 .order-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .order-form__title {
   margin-bottom: 12px;
   font-weight: bold;
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--font-color3);
+}
+
+@media screen and (min-width: 1200px) {
+  .order-form__title {
+    line-height: calc(23 / 20);
+  }
 }
 
 .form__group {
@@ -1308,7 +1333,7 @@ a {
   padding-bottom: 10px;
   padding-top: 10px;
   margin-top: 4px;
-  min-width: 448px;
+  width: 100%;
   cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1346,7 +1371,7 @@ a {
 .comment-area {
   padding: 12px 16px;
   margin-top: 4px;
-  min-width: 448px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1373,14 +1398,22 @@ a {
 }
 
 .checker__lbl,
-.checker-link {
-  font-size: 14px;
-  line-height: calc(24 / 14);
+.checker__link {
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: var(--font-color1);
 }
 
-.checker-link {
+@media screen and (min-width: 1200px) {
+  .checker__lbl,
+  .checker__link {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+}
+
+.checker__link {
   margin-left: 5px;
 }
 
