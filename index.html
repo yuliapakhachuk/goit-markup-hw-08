@@ -44,6 +44,7 @@
                 </svg>
             </button>
         </div>
+<!-- ---------------------MOBILE-Menu---------------------------------------         -->
         <div class="mob-menu js-menu-container" id="mobile-menu" >
             <button type="button" class="mob-menu__btn--close js-close-menu">
                 <svg width="40" height="40">
@@ -84,14 +85,14 @@
     </header>
     <!-- The main content    -->
     <main>
-        <!-- --Hero-- -->
+<!-- -----------------------Hero-------------------------------- -->
         <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button class="hero__btn basic__btn" type="button" data-modal-open >Заказать услугу</button>
             </div>
         </section>
-        <!-- Our features -->
+<!-- -----------------------Our features------------------------------- -->
         <section class="features">
             <div class="container">
                 <h2 class="visually-hidden">Особенности нашей компании</h2>
@@ -118,14 +119,23 @@
                 </ul>
             </div>
         </section>
-        <!-- What we do -->
+<!-- ----------------------What we do------------------------------------------------------ -->
         <section class="activity">
             <div class="container">
                 <h2 class="activity__title basic__title">Чем мы занимаемся</h2>
                 <ul class="activity__list">
                     <li class="activity__item">
-                        <img class="activity__img" src="./images/whatwedo1.jpg" alt="Человек программирует на мониторе и планшете"
-                            width="370" height="294">
+                        <picture>
+                            <source
+                            srcset="
+                            ./images/activity/whatwedo-1.jpg 1x, 
+                            ./images/activity/whatwedo-1@2x.jpg 2x" 
+                            media="(min-width: 1200px)" 
+                            />
+                            <img 
+                            src="./images/activity/whatwedo-1.jpg" 
+                            alt="Человек программирует на мониторе и планшете">
+                        </picture>
                         <div class="activity__tumb">
                             <p class="activity__dscr">
                                 Десктопные приложения
@@ -133,8 +143,15 @@
                         </div>
                     </li>
                     <li class="activity__item">
-                        <img class="activity__img" src="./images/whatwedo2.jpg" alt="Человек используєт мибильную версию приложения"
-                            width="370" height="294">
+                        <picture>
+                            <source srcset="
+                            ./images/activity/whatwedo-2.jpg 1x, 
+                            ./images/activity/whatwedo-2@2x.jpg 2x" 
+                            media="(min-width: 1200px)" />
+                            <img 
+                            src="./images/activity/whatwedo-2.jpg" 
+                            alt="Человек используєт мобильную версию приложения">
+                        </picture>
                         <div class="activity__tumb">
                             <p class="activity__dscr">
                                 Мобильные приложения
@@ -142,8 +159,15 @@
                         </div>
                     </li>
                     <li class="activity__item">
-                        <img class="activity__img" src="./images/whatwedo3.jpg"
-                            alt="Человек подбиирает на планшете цвет на цветовой палитре" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                            ./images/activity/whatwedo-3.jpg 1x, 
+                            ./images/activity/whatwedo-3@2x.jpg 2x" 
+                            media="(min-width: 1200px)" />
+                            <img 
+                            src="./images/activity/whatwedo-3.jpg" 
+                            alt="Человек подбирает на планшете цвет на цветовой палитре">
+                        </picture>
                         <div class="activity__tumb">
                             <p class="activity__dscr">
                                 Дизайнерские решения
@@ -153,14 +177,32 @@
                 </ul>
             </div>
         </section>
-        <!-- Our team -->
+<!-- ----------------------Our team---------------------------------- -->
         <section class="team">
             <div class="container">
                 <h2 class="team__title basic__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img class="team__img" src="./images/photo_prod-designer.jpg" alt="Фото продуктового дизайнера" width="270"
-                            height="260" />
+                        <picture>
+                            <source 
+                            srcset="
+                            ./images/team/team-1-desk.jpg 1x, 
+                            ./images/team/team-1-desk@2x.jpg 2x" 
+                            media="(min-width: 1200px)" />
+                            <source 
+                            srcset="
+                            ./images/team/team-1-tab.jpg 1x, 
+                            ./images/team/team-1-tab@2x.jpg 2x" 
+                            media="(min-width: 768px)" />
+                            <source 
+                            srcset="
+                            ./images/team/team-1-mob.jpg 1x, 
+                            ./images/team/team-1-mob@2x.jpg 2x" 
+                            media="(min-width: 480px)" />
+                            <img 
+                            src="./images/team/team-1-desk.jpg" 
+                            alt="Фото продуктового дизайнера">
+                        </picture>
                         <div class="member__card">
                             <h3 class="member__name">Игорь Демьяненко</h3>
                             <p class="member__position" lang="en">Product Designer</p>
@@ -197,8 +239,26 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/photo_front-developer.jpg" alt="Фото фронтенд-разработчика" width="270"
-                            height="260" />
+                        <picture>
+                            <source 
+                            srcset="
+                            ./images/team/team-2-desk.jpg 1x, 
+                            ./images/team/team-2-desk@2x.jpg 2x" 
+                            media="(min-width: 1200px)" />
+                            <source 
+                            srcset="
+                            ./images/team/team-2-tab.jpg 1x, 
+                            ./images/team/team-2-tab@2x.jpg 2x" 
+                            media="(min-width: 768px)" />
+                            <source 
+                            srcset="
+                            ./images/team/team-2-mob.jpg 1x, 
+                            ./images/team/team-2-mob@2x.jpg 2x" 
+                            media="(min-width: 480px)" />
+                            <img 
+                            src="./images/team/team-2-desk.jpg" 
+                            alt="Фото фронтенд-разработчика">
+                        </picture>
                         <div class="member__card">
                             <h3 class="member__name">Ольга Репина</h3>
                             <p class="member__position" lang="en">Frontend Developer</p>
@@ -235,7 +295,26 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/photo_marketing.jpg" alt="Фото маркетолога" width="270" height="260" />
+                        <picture>
+                            <source 
+                            srcset="
+                            ./images/team/team-3-desk.jpg 1x, 
+                            ./images/team/team-3-desk@2x.jpg 2x" 
+                            media="(min-width: 1200px)" />
+                            <source 
+                            srcset="
+                            ./images/team/team-3-tab.jpg 1x, 
+                            ./images/team/team-3-tab@2x.jpg 2x" 
+                            media="(min-width: 768px)" />
+                            <source 
+                            srcset="
+                            ./images/team/team-3-mob.jpg 1x, 
+                            ./images/team/team-3-mob@2x.jpg 2x" 
+                            media="(min-width: 480px)" />
+                            <img 
+                            src="./images/team/team-3-desk.jpg" 
+                            alt="Фото маркетолога">
+                        </picture>
                         <div class="member__card">
                             <h3 class="member__name">Николай Тарасов</h3>
                             <p class="member__position" lang="en">Marketing</p>
@@ -272,8 +351,26 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/photo_ui-designer.jpg" alt="Фото проектировщика интерфейса" width="270"
-                            height="260" />
+                        <picture>
+                            <source 
+                            srcset="
+                            ./images/team/team-4-desk.jpg 1x, 
+                            ./images/team/team-4-desk@2x.jpg 2x" 
+                            media="(min-width: 1200px)" />
+                            <source 
+                            srcset="
+                            ./images/team/team-4-tab.jpg 1x, 
+                            ./images/team/team-4-tab@2x.jpg 2x" 
+                            media="(min-width: 768px)" />
+                            <source 
+                            srcset="
+                            ./images/team/team-4-mob.jpg 1x, 
+                            ./images/team/team-4-mob@2x.jpg 2x" 
+                            media="(min-width: 480px)" />
+                            <img 
+                            src="./images/team/team-4-desk.jpg" 
+                            alt="Фото проектировщика интерфейса">
+                        </picture>
                         <div class="member__card">
                             <h3 class="member__name">Михаил Ермаков</h3>
                             <p class="member__position" lang="en">UI Designer</p>
